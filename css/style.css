@@ -1,0 +1,33 @@
+/* === Google Fonts Import (Manrope) === */
+/* Importing Manrope font family */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* === Google Fonts Import (Rubik) === */
+/* Importing Rubik font family */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* === Style Variables === */
+
+/* Definition of variables for colors, font families, and font sizes */
+
+:root {
+
+    /* Colors */
+    --background-color: #FFFFFF;
+    --secondary-color: #151922;
+    --primary-blue: #6265EF;
+    --error-red: #EF4444;
+
+    /* Fonts */
+    --font-paragrafh: "Manrope", sans-serif;
+    --font-title: "Rubik", sans-serif;
+}
+
+
+
+body {
+    background-color: var(--background-color);
+
+}
+
+
