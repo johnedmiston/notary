@@ -14,7 +14,8 @@
 
     /* Colors */
     --background-color: #FFFFFF;
-    --secondary-color: #151922;
+    --secondary-color: #161C2D;
+    --primary-orange: #EB7565;
     --primary-blue: #6265EF;
     --error-red: #EF4444;
 
@@ -24,10 +25,137 @@
 }
 
 
-
 body {
     background-color: var(--background-color);
-
+    font-family: var(--font-paragrafh);
+    font-size: 16px;
 }
 
 
+/* === Buttons === */
+
+._btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 140px;
+    border-radius: 8px;
+    height: 40px;
+}
+
+._btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 140px;
+    border-radius: 8px;
+    height: 60px;
+}
+
+._bt-meeting {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 160px;
+    border-radius: 8px;
+    height: 55px;
+}
+
+._btn-primary:hover,
+._btn-secondary:hover,
+._bt-meeting:hover {
+    background-color: #F8F8F8;
+    color: #161C2D;
+}
+
+/* === HEADER (NavBar) === */
+
+header {
+    font-family: var(--font-title);
+    margin: 20px 180px 20px;
+}
+
+.navbar-text {
+    font-weight: 700;
+    color: var(--secondary-color);
+    transition: transform 1s ease;
+}
+
+
+.nav-link {
+    color: var(--secondary-color) !important;
+    transition: transform 1s ease;
+}
+
+
+.navbar-text:hover {
+    transform: scale(1.1);
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+
+/* === Principal Hero === */
+
+
+/* Hero Container */
+._hero-txt {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+._hero-txt p {
+    line-height: 2.5;
+    font-size: 1.2rem;
+}
+
+._hero-txt h1 {
+    font-size: 4.5rem;
+}
+
+._hero-img {
+    width: 350px;
+    border-radius: 100%;
+    height: auto;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+._section-services {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+._section-services h1 {
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-family: var(--font-title);
+}
+
+.card {
+    transition: transform 1s ease;
+}
+
+
+.card-title {
+    font-size: 1.7rem;
+}
+
+.card-text {
+    padding: 1rem;
+    text-align: justify;
+    line-height: 2.1;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+._service-call-to-action {
+    margin-top: 3rem;
+}
+
+.line-break {
+    height: 2px;
+    background-color: grey;
+}
