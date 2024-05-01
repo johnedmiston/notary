@@ -94,10 +94,13 @@ header {
 }
 
 
-/* === Principal Hero === */
-
-
+/* === Hero Section === */
 /* Hero Container */
+
+main {
+    padding-top: 2rem;
+}
+
 ._hero-txt {
     margin-left: 3rem;
     margin-top: 1rem;
@@ -109,7 +112,7 @@ header {
 }
 
 ._hero-txt h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 ._hero-img {
@@ -120,8 +123,11 @@ header {
     margin-top: 5rem;
 }
 
+
+/* === Services Section === */
+
 ._section-services {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     text-align: center;
 }
 
@@ -133,29 +139,117 @@ header {
 
 .card {
     transition: transform 1s ease;
+    border-radius: 40px !important;
+
 }
 
-
-.card-title {
-    font-size: 1.7rem;
-}
-
-.card-text {
+.card img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
     padding: 1rem;
-    text-align: justify;
-    line-height: 2.1;
+    justify-self: center;
+    align-self: center;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
-
 ._service-call-to-action {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .line-break {
     height: 2px;
     background-color: grey;
 }
+
+._section-services .row {
+    padding-bottom: 4.5rem;
+}
+
+/* === About Me Section === */
+
+._section-about-me {
+    text-align: center;
+}
+
+
+._section-about-me h1 {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+._section-about-me .row {
+    padding-bottom: 2.5rem;
+}
+
+._section-about-me img {
+    border-radius: 50%;
+}
+
+/* === FAQ SECTION === */
+
+.container-fluid.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+._section-FAQ {
+    background-color: #161C2D;
+    color: #FFFFFF;
+    padding: 6.5rem;
+}
+
+._FAQ-text h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+._section-FAQ .row .col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+}
+
+._FAQ-text p {
+    text-align: left;
+}
+
+.accordion-header {
+    border-radius: 30px !important;
+}
+
+.accordion-body {
+    color: black !important;
+    text-align: justify;
+}
+
+.content-FAQ {
+    padding-left: 1.5rem;
+}
+
+
+.content-FAQ h5 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-FAQ ion-icon {
+    display: flex;
+    position: relative;
+    top: 1.9rem;
+    right: 2.5rem;
+}
+
+ion-icon {
+    color: #EB7565;
+}
+
+._FAQ {
+    margin-left: 3rem;
+}
+
