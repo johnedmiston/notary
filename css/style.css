@@ -205,6 +205,7 @@ main {
 ._FAQ-text h1 {
     font-size: 3rem;
     text-align: left;
+    line-height: 1.5;
 }
 
 ._section-FAQ .row .col {
@@ -216,6 +217,7 @@ main {
 
 ._FAQ-text p {
     text-align: left;
+    line-height: 2.5;
 }
 
 .accordion-header {
@@ -242,7 +244,7 @@ main {
     display: flex;
     position: relative;
     top: 1.9rem;
-    right: 2.5rem;
+    right: 2.7rem;
 }
 
 ion-icon {
@@ -253,3 +255,41 @@ ion-icon {
     margin-left: 3rem;
 }
 
+
+/* === CONTACT ME SECTION === */
+
+._section-contact-me {
+    text-align: center;
+    padding: 5rem;
+}
+
+._section-contact-me ion-icon {
+    color: var(--secondary-color);
+}
+
+
+._contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+._contact-info h5 {
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+
+._contact-info p {
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+
+._contact-form-container {
+    box-shadow: -10px -10px 30px 0 rgba(255, 255, 255, 1), 110px 10px 30px 0 rgba(174, 174, 192, 0.4);
+}
+
+._section-contact-me h1 {
+    font-size: 3rem;
+    line-height: 2.5;
+}
