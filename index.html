@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>John Edmiston | Notary</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
 
+    <!-- ======= Bootstrap integration (Bootstrap CSS) ======= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- ======= CSS integration (style.css) ======= -->
     <link rel="stylesheet" href="css/style.css">
     <!-- ======= CSS integration (normalize.css) ======= -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- ======= Bootstrap integration (Bootstrap CSS) ======= -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
-<body class="bg">
+<body class="container-fluid no-padding">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
@@ -36,31 +38,29 @@
                 </ul>
             </div>
             <div class="d-flex">
-                <button class="_btn-primary hide-on-small" type="button">Contact Me</button>
+                <button class=" _btn _btn-primary hide-on-small" type="button">Contact Me</button>
             </div>
         </div>
     </nav>
 </header>
-<main class="container-fluid no-padding my-4">
-    <section class="container">
+<main>
+    <section class="container _hero-principal">
         <div class="row">
-            <div class="col _hero-txt my-4">
+            <div class="col-lg-6 order-lg-1 order-sm-2 col-sm-12 _hero-txt">
                 <h1>Professional Notary Services</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore magni sint. A ab ad
-                    culpa, distinctio, excepturi laudantium mollitia necessitatibus neque nihil, obcaecati porro quidem
-                    quod repellat ullam vel.</p>
-                <button class="_btn-secondary" type="button">Contact Me</button>
+                <p>Looking for reliable and professional notary services in Virginia? Look no further! John Edmiston is here to assist you with all your notarial needs.</p>
+                <button class=" _btn _btn-secondary" type="button">Contact Me</button>
             </div>
-            <div class="col">
+            <div class="col-lg-6 order-sm-1 order-lg-2 col-sm-12 align-self-center">
                 <img class="_hero-img" src="assets/img/johned_consult-nobg-preview.png" alt="Notary">
             </div>
         </div>
     </section>
 
-    <section class="container-lg my-4 _section-services" id="services">
+    <section class="container" id="services">
         <h1>My Services</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col _first-text-about-me">
+        <div class="row justify-content-center">
+            <div class="col-4">
                 <div class="card h-100 text-white bg-dark mb-3">
                     <img src="./assets/img/legal-document-prep.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-4 ">
                 <div class="card h-100 text-white bg-dark mb-3">
                     <img src="./assets/img/papers.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-4 ">
                 <div class="card h-100 text-white bg-dark mb-3">
                     <img src="./assets/img/online-work.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -93,28 +93,26 @@
             </div>
         </div>
 
-        <div class="line-break"></div>
-
         <div class="container _service-call-to-action">
-            <div class="row">
-                <div class="col">
-                    <div>
+            <div class="row justify-content-center _row-service">
+                <div class="col-6">
+                    <div class="_service_call_to_action_text">
                         <h2>Are you ready to start working with me?</h2>
                         <p>io dolores eum incidunt inventore ipsam libero, minus natus, non numquam pariatur quasi,
                             reiciendis rem veritatis!
                         </p>
                     </div>
                 </div>
-                <div class="col">
-                    <button class="_bt-meeting">Schedule Meeting</button>
+                <div class="col-6 mx-auto text-center _service_button">
+                    <button class="_btn _btn-meeting">Schedule Meeting</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container-lg my-4 _section-about-me" id="aboutMe">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col mx-auto text-center">
                 <div class="container _about-me">
                     <h1>About Me</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet assumenda deleniti
@@ -125,18 +123,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div>
+            <div class="col mx-auto text-center">
+                <div class="p-5">
                     <img src="assets/img/johned_academic.png" alt="notary John picture">
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mx-auto text-center">
                 <h2>Guiding your legal success with expert notarial support.</h2>
             </div>
-            <div class="col">
+            <div class="col-lg-6 mx-auto text-center">
                 <p>Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae
                     ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam.
                     Integer quis metus vitae elit lobortis egestas.
@@ -149,8 +147,8 @@
 
     <section class="_section-FAQ">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col _FAQ-text">
+            <div class="row justify-content-center">
+                <div class="col mx-auto text-center _FAQ-text">
                     <div>
                         <h1>Questions About Our Services</h1>
                         <p>Wondering about notary services? We've got you covered! Whether it's about document types,
@@ -181,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col _FAQ">
+                <div class="col mx-auto text-center  d-flex justify-content-center align-items-cente_FAQ">
                     <div class="accordion accordion-flush" id="accordionFlush">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -330,3 +328,10 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+
+<!-- TODO: Replace placeholder text with final content (no lorem ipsum). -->
+<!-- TODO: Add Freepik attribution. -->
+<!-- TODO: Improve or optimize CSS classes. -->
+<!-- TODO: Optimize Bootstrap responsiveness. -->
+<!-- TODO: Optimize variables and font sizes. -->

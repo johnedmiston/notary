@@ -13,105 +13,100 @@
 :root {
 
     /* Colors */
-    --background-color: #FFFFFF;
-    --secondary-color: #161C2D;
+    --white: #FFFFFF;
+    --dark-blue: #161C2D;
     --primary-orange: #EB7565;
     --primary-blue: #6265EF;
-    --error-red: #EF4444;
+
 
     /* Fonts */
-    --font-paragrafh: "Manrope", sans-serif;
+    --font-paragraph: "Manrope", sans-serif;
     --font-title: "Rubik", sans-serif;
+
+    --fonts-size-p: 1.2rem;
+    --line-height-p: 1.7;
 }
 
 
 body {
-    background-color: var(--background-color);
-    font-family: var(--font-paragrafh);
+    background-color: var(--white);
+    font-family: var(--font-paragraph);
     font-size: 16px;
 }
 
 
 /* === Buttons === */
-
-._btn-primary {
-    background-color: var(--secondary-color);
-    color: white;
+._btn {
+    background-color: var(--dark-blue);
+    color: var(--white);
     width: 140px;
     border-radius: 8px;
+}
+
+._btn-primary {
     height: 40px;
 }
 
 ._btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
-    width: 140px;
-    border-radius: 8px;
     height: 60px;
+    margin-left: 0.5rem;
 }
 
-._bt-meeting {
-    background-color: var(--secondary-color);
-    color: white;
+._btn-meeting {
     width: 160px;
-    border-radius: 8px;
     height: 55px;
 }
 
 ._btn-primary:hover,
 ._btn-secondary:hover,
-._bt-meeting:hover {
-    background-color: #F8F8F8;
-    color: #161C2D;
+._btn-meeting:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
 }
 
 /* === HEADER (NavBar) === */
-
 header {
     font-family: var(--font-title);
-    margin: 20px 180px 20px;
+    margin: 1rem 7rem 2rem;
 }
 
 .navbar-text {
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--dark-blue);
     transition: transform 1s ease;
 }
 
 
 .nav-link {
-    color: var(--secondary-color) !important;
+    color: var(--dark-blue);
     transition: transform 1s ease;
 }
 
 
-.navbar-text:hover {
-    transform: scale(1.1);
-}
-
+.navbar-text:hover,
 .nav-link:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
 /* === Hero Section === */
 /* Hero Container */
-
 main {
     padding-top: 2rem;
 }
 
-._hero-txt {
-    margin-left: 3rem;
-    margin-top: 1rem;
+._hero-principal {
+    padding: 1rem;
 }
 
 ._hero-txt p {
-    line-height: 2.5;
-    font-size: 1.2rem;
+    line-height: var(--line-height-p);
+    font-size: var(--fonts-size-p);
+    padding: 0.5rem;
 }
 
 ._hero-txt h1 {
+    padding: 0.5rem;
     font-size: 4rem;
 }
 
@@ -125,31 +120,27 @@ main {
 
 
 /* === Services Section === */
-
-._section-services {
-    padding-top: 2.5rem;
+#services {
     text-align: center;
 }
 
-._section-services h1 {
-    padding-bottom: 3rem;
+#services h1 {
     font-size: 3.5rem;
-    font-family: var(--font-title);
 }
 
 .card {
-    transition: transform 1s ease;
-    border-radius: 40px !important;
+    border-radius: 40px;
+    text-align: center;
 
+    transition: transform 1s ease;
 }
 
 .card img {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
     padding: 1rem;
-    justify-self: center;
-    align-self: center;
+    place-self: center;
 }
 
 .card:hover {
@@ -157,32 +148,24 @@ main {
 }
 
 ._service-call-to-action {
-    margin-top: 5rem;
+    padding: 5rem;
 }
 
-.line-break {
-    height: 2px;
-    background-color: grey;
+._service_call_to_action_text p {
+    font-size: var(--fonts-size-p);
+    line-height: var(--line-height-p);
 }
 
-._section-services .row {
-    padding-bottom: 4.5rem;
-}
 
 /* === About Me Section === */
 
-._section-about-me {
-    text-align: center;
+._section-about-me p {
+    font-size: var(--fonts-size-p);
+    line-height: var(--line-height-p);
 }
-
 
 ._section-about-me h1 {
     font-size: 4rem;
-    padding-bottom: 1.5rem;
-}
-
-._section-about-me .row {
-    padding-bottom: 2.5rem;
 }
 
 ._section-about-me img {
@@ -190,16 +173,15 @@ main {
 }
 
 /* === FAQ SECTION === */
-
 .container-fluid.no-padding {
     padding-left: 0;
     padding-right: 0;
 }
 
 ._section-FAQ {
-    background-color: #161C2D;
-    color: #FFFFFF;
-    padding: 6.5rem;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 5rem;
 }
 
 ._FAQ-text h1 {
@@ -217,22 +199,14 @@ main {
 
 ._FAQ-text p {
     text-align: left;
-    line-height: 2.5;
+    line-height: var(--line-height-p);
 }
 
-.accordion-header {
-    border-radius: 30px !important;
-}
 
 .accordion-body {
-    color: black !important;
+    color: var(--dark-blue);
     text-align: justify;
 }
-
-.content-FAQ {
-    padding-left: 1.5rem;
-}
-
 
 .content-FAQ h5 {
     text-align: justify;
@@ -257,14 +231,13 @@ ion-icon {
 
 
 /* === CONTACT ME SECTION === */
-
 ._section-contact-me {
     text-align: center;
     padding: 5rem;
 }
 
 ._section-contact-me ion-icon {
-    color: var(--secondary-color);
+    color: var(--dark-blue);
 }
 
 
@@ -293,3 +266,4 @@ ion-icon {
     font-size: 3rem;
     line-height: 2.5;
 }
+
