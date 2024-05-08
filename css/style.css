@@ -35,6 +35,11 @@ body {
 }
 
 
+a {
+    text-decoration: none;
+}
+
+
 /* === Buttons === */
 ._btn {
     background-color: var(--dark-blue);
@@ -44,17 +49,23 @@ body {
 }
 
 ._btn-primary {
-    height: 40px;
+    padding: 0.5rem;
+    width: 10rem;
+    text-align: center;
+    border: 1px solid var(--dark-blue);
 }
 
 ._btn-secondary {
-    height: 60px;
-    margin-left: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 10rem;
+    border: 1px solid var(--dark-blue);
+
 }
 
 ._btn-meeting {
-    width: 160px;
-    height: 55px;
+    padding: 1rem;
+    border: 1px var(--dark-blue) solid;
 }
 
 ._btn-primary:hover,
@@ -91,22 +102,16 @@ header {
 
 /* === Hero Section === */
 /* Hero Container */
-main {
-    padding-top: 2rem;
-}
 
-._hero-principal {
-    padding: 1rem;
-}
 
 ._hero-txt p {
     line-height: var(--line-height-p);
     font-size: var(--fonts-size-p);
-    padding: 0.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
 }
 
 ._hero-txt h1 {
-    padding: 0.5rem;
     font-size: 4rem;
 }
 
@@ -126,12 +131,17 @@ main {
 
 #services h1 {
     font-size: 3.5rem;
+    padding: 1.5rem;
+}
+
+
+._card-container {
+    padding: 1.5rem 1rem;
 }
 
 .card {
     border-radius: 40px;
     text-align: center;
-
     transition: transform 1s ease;
 }
 
@@ -151,11 +161,26 @@ main {
     padding: 5rem;
 }
 
+._service_call_to_action_text h2 {
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
 ._service_call_to_action_text p {
     font-size: var(--fonts-size-p);
     line-height: var(--line-height-p);
+    text-align: justify;
+    padding: 0.5rem 0;
 }
 
+._service_button {
+    margin-top: 60px;
+}
+
+
+._attribution {
+    font-size: 0.7rem;
+}
 
 /* === About Me Section === */
 
@@ -249,21 +274,58 @@ ion-icon {
 }
 
 ._contact-info h5 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.5;
 }
 
 ._contact-info p {
-    font-size: 1.5rem;
-    line-height: 2.5;
+    font-size: var(--fonts-size-p);
+    line-height: var(--line-height-p);
 }
 
-._contact-form-container {
-    box-shadow: -10px -10px 30px 0 rgba(255, 255, 255, 1), 110px 10px 30px 0 rgba(174, 174, 192, 0.4);
-}
 
 ._section-contact-me h1 {
     font-size: 3rem;
     line-height: 2.5;
 }
 
+
+/* ==========
+            ANIMATIONS
+                ==========*/
+
+
+
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-35px);
+        transform: translateY(-35px);
+    }
+}
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-35px);
+        transform: translateY(-35px);
+    }
+}
