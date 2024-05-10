@@ -16,8 +16,6 @@
     --white: #FFFFFF;
     --dark-blue: #161C2D;
     --primary-orange: #EB7565;
-    --primary-blue: #6265EF;
-
 
     /* Fonts */
     --font-paragraph: "Manrope", sans-serif;
@@ -25,6 +23,7 @@
 
     --fonts-size-p: 1.2rem;
     --line-height-p: 1.7;
+
 }
 
 
@@ -40,7 +39,9 @@ a {
 }
 
 
-/* === Buttons === */
+/* ==========
+            Buttons
+                    ==========*/
 ._btn {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -75,7 +76,10 @@ a {
     color: var(--dark-blue);
 }
 
-/* === HEADER (NavBar) === */
+
+/* ==========
+            HEADER (NavBar)
+                        ==========*/
 header {
     font-family: var(--font-title);
     margin: 1rem 7rem 2rem;
@@ -100,9 +104,9 @@ header {
 }
 
 
-/* === Hero Section === */
-/* Hero Container */
-
+/* ==========
+            Hero Section
+                        ==========*/
 
 ._hero-txt p {
     line-height: var(--line-height-p);
@@ -124,7 +128,9 @@ header {
 }
 
 
-/* === Services Section === */
+/* ==========
+            Services Section
+                        ==========*/
 #services {
     text-align: center;
 }
@@ -143,6 +149,14 @@ header {
     border-radius: 40px;
     text-align: center;
     transition: transform 1s ease;
+
+}
+
+
+.card-text {
+    font-size: 1rem;
+    line-height: 2;
+    text-align: justify;
 }
 
 .card img {
@@ -182,7 +196,9 @@ header {
     font-size: 0.7rem;
 }
 
-/* === About Me Section === */
+/* ==========
+            About Me Section
+                        ==========*/
 
 ._section-about-me p {
     font-size: var(--fonts-size-p);
@@ -197,7 +213,11 @@ header {
     border-radius: 50%;
 }
 
-/* === FAQ SECTION === */
+
+/* ==========
+            FAQ SECTION
+                        ==========*/
+
 .container-fluid.no-padding {
     padding-left: 0;
     padding-right: 0;
@@ -255,7 +275,11 @@ ion-icon {
 }
 
 
-/* === CONTACT ME SECTION === */
+/* ==========
+            CONTACT ME SECTION
+                            ==========*/
+
+
 ._section-contact-me {
     text-align: center;
     padding: 5rem;
@@ -289,43 +313,3 @@ ion-icon {
     line-height: 2.5;
 }
 
-
-/* ==========
-            ANIMATIONS
-                ==========*/
-
-
-
-.slide-top {
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-
-
-
-/**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
-@-webkit-keyframes slide-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        -webkit-transform: translateY(-35px);
-        transform: translateY(-35px);
-    }
-}
-@keyframes slide-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        -webkit-transform: translateY(-35px);
-        transform: translateY(-35px);
-    }
-}
